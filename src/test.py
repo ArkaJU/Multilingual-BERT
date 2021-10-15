@@ -48,32 +48,38 @@ def run_test(df_test, model_path):
 
 if __name__ == "__main__":
     
-    model_path = "/content/Multilingual-BERT/model/mbert.pt"
+    model_path = "/content/drive/MyDrive/Multilingual-BERT/model/mbert.pt"
 
     print("Evaluating on english \n")
     df_test = pd.read_csv("datasets/MLDoc/english.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
 
     print("Evaluating on spanish \n")
-    df_test = pd.read_csv("./spanish.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/spanish.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
 
     print("Evaluating on french \n")
-    df_test = pd.read_csv("./french.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/french.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
 
     print("Evaluating on italian \n")
-    df_test = pd.read_csv("./italian.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/italian.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
 
     print("Evaluating on japanese \n")
-    df_test = pd.read_csv("./japanese.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/japanese.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
 
     print("Evaluating on russian \n")
-    df_test = pd.read_csv("./russian.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/russian.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
 
     print("Evaluating on german \n")
-    df_test = pd.read_csv("./german.test", delimiter='\t', header=None, names=['label', 'sentence'])
+    df_test = pd.read_csv("datasets/MLDoc/german.test", delimiter='\t', header=None, names=['label', 'sentence'])
     run_test(df_test, model_path)
+    print()
