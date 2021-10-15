@@ -7,4 +7,4 @@ labels_encoding = {
 
 MAX_LEN = 128 # max sequences length
 BATCH_SIZE = 32
-EPOCHS = 1
+EPOCHS = 3

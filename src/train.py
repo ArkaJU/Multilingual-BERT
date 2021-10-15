@@ -149,13 +149,15 @@ class MBERT:
     return losses   
 
   def save(self):
-      output_dir = './model_save'
+      output_dir = './model'
 
       if not os.path.exists(output_dir):
           os.makedirs(output_dir)
       
-      model_to_save = self.model.module if hasattr(self.model, 'module') else self.model
-      model_to_save.save_pretrained(output_dir)
+      #model_to_save = self.model.module if hasattr(self.model, 'module') else self.model
+      torch.save(self.model, output_dir+"/mbert.pt")
+
+      #model_to_save.save_pretrained(output_dir)
 
 if __name__ == "__main__":
     mbert = MBERT()
