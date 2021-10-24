@@ -8,7 +8,7 @@ import random
 from tqdm import tqdm
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 
-from transformers import BertForSequenceClassification, AdamW, BertConfig, BertPreTrainedModel, BertModel
+from transformers import BertForSequenceClassification, AdamW
 from transformers import get_linear_schedule_with_warmup
 
 from utils import preprocessing, attention_masks, compute_accuracy
